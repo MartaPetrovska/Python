@@ -9,7 +9,7 @@ while True:
             deposit = int(input("How much do you want to deposit?: "))
             balance += deposit 
             print(f"Your current balance is {balance}")
-        except ValueError:
+        except:
             print('You need to input an integer!')
             continue
 
@@ -22,7 +22,7 @@ while True:
                 print(f"Your current balance is {balance} EUR")
             else:
                 print(f"There is not enough money in your bank account. Your current balance is {balance}")
-        except ValueError:
+        except:
             print('You need to input an integer!')
             continue
 
